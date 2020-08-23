@@ -5,12 +5,15 @@ let requestURL = 'https://github.com/ani-rudh/ani-rudh.github.io/blob/master/sam
 let request = new XMLHttpRequest();
 
 request.open('GET', requestURL);
-request.responseType = 'json';
+request.responseType = 'text';
 request.send();
 
 request.onload = function()
 {
-    const config = request.response;
-    h1.textContent = config;
+    const configtext = request.response;
+    const config = JSON.parse(configtext);
+
+    h1.textContent = configtext;
 }
+
 // h1.textContent = 'Welcome to Ani\'s page!';
