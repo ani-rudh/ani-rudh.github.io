@@ -1,7 +1,7 @@
 const header = document.querySelector('header');
 const h1 = document.querySelector('h1');
 
-let requestURL = 'https://github.com/ani-rudh/ani-rudh.github.io/blob/master/sample.json';
+let requestURL = 'https://gist.githubusercontent.com/ani-rudh/a43a80dff72c3535aa92cc2efcc9e03b/raw/99b3ab64be1a5ff3b4110c197b1f3fc4a42419c8/sample.json';
 let request = new XMLHttpRequest();
 
 request.open('GET', requestURL);
